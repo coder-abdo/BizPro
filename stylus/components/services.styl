@@ -1,0 +1,80 @@
+.services
+    padding 4rem 2rem
+    background-color $dark-blue
+    &__title
+        font-size 4rem
+        font-weight 700
+        color #ffffff
+        text-align center
+        position relative
+        padding-bottom 2rem
+        margin-bottom 4rem
+        &::after
+            position absolute
+            display block
+            content ''
+            width 10%
+            height 2px
+            background-color $red
+            bottom 0
+            left 50%
+            transform translateX(-50%)
+    &__content
+        font-size 2.2rem
+        font-weight 500
+        color #ffffff
+        text-align center
+        margin-bottom 4rem
+    &__container
+        display grid
+        grid-template-rows repeat(6, 1fr)
+        grid-template-columns 1fr
+        grid-gap 4rem
+        @media(min-width 50em)
+            grid-template-rows repeat(3, 1fr)
+            grid-template-columns repeat(2, 1fr)
+        @media(min-width 62em)
+            grid-template-rows repeat(2, 1fr)
+            grid-template-columns repeat(3, 1fr)
+
+.service
+    border 1px solid #ffffff
+    padding 4rem
+    transition border-color 300ms
+    flex(flex-start, center)
+    flex-direction column
+    &:hover
+        border-color $red
+        .service__name
+            transform translateY(-6rem)
+            color $red
+        .service__desc
+            transform translateY(0)
+            opacity 1
+            visibility visible
+    &__name
+        flex(flex-start, center)
+        flex-direction column
+        text-align center
+        color $grey
+        transition transform 300ms
+        width 30%
+        background-color $dark-blue
+    &__icon
+        font-size 4rem
+        background-color $dark-blue
+        margin-bottom 2rem
+    &__title
+        font-size 2rem
+        font-weight 500
+    &__desc
+        transform translateY(50rem)
+        opacity 0
+        visibility hidden
+        color #ffffff
+        font-size 1.8rem
+        font-weight 400
+        transition-property transform, opacity
+        transition-duration 300ms
+        transition-duration 150ms
+        transform-origin bottom left

@@ -1,0 +1,23 @@
+{
+  "name": "one-page-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.5.0",
+    "animate.css": "^3.7.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-image": "^4.4.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-stylus": "^2.7.0",
+    "jquery": "^3.3.1",
+    "mixitup": "^3.3.1",
+    "owl.carousel": "^2.3.4",
+    "typed.js": "^2.0.9"
+  }
+}

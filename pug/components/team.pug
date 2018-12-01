@@ -1,0 +1,24 @@
+section#team.team
+    h2.team__title MEET OUR TEAM
+    p.team__content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+    .team__members
+        -var names = ['Gonzalez Gina', 'Holly Vincenzini', 'Ramirez Minita'];
+        -var jobs = ['web developer', 'media partner', 'graphic designer'];
+        -for(var i = 0;i < names.length;i++)
+            .team__member
+                .team__back
+                    .team__summary
+                        h4.team__name.team__name--redbd= names[i]
+                        h5.team__job.team__job--grey= jobs[i]
+                        p.team__text On the other hand, We denounce ut with righteo indignation and dislike men who are so beguiled and demoralized
+                    ul.team__social
+                        -var socials = ['facebook-f', 'twitter', 'pinterest', 'linkedin-in'];
+                        -for(var j = 0;j < socials.length;j++)
+                            li.social
+                                a(href="#" class="social__link")
+                                    i(class=`fab fa-${socials[j]}`)
+                .team__front
+                    img(src=`./images/team-${i + 1}.jpg`, alt="member" class="team__img")
+                    .team__detail
+                        h4.team__name= names[i]
+                        h5.team__job= jobs[i]

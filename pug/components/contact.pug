@@ -1,0 +1,20 @@
+section#contact.contact
+    h2.contact__title CONTACT INFO
+    p.contact__content There are many variations of passages of Lorem Ipsum available, but the majori have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a pas of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+    .contact__details
+        -var details = [{icon: 'fas fa-map-marked-alt', title: 'ADDRESS', detail: 'Freedom Way, Jersey City, NJ 07305, USA'},{icon:'fas fa-phone', title: 'PHONE', detail:'+88 01911854378'},{icon: 'far fa-envelope',title:'EMAIL', detail:'backpiper.com@gmail.com'}];
+        -for(var i = 0;i < details.length;i++)
+            .contact__detail
+                .icon
+                    i(class=`${details[i].icon}`)
+                .text
+                    h3= details[i].title
+                    h4= details[i].detail
+    .contact__message
+        h2 send mesaage
+        .message
+            input(type="text" placeholder="First Name" class="f-name")
+            input(type="text" placeholder="Last Name" class="l-name")
+            input(type="email" placeholder="Your Email" class="email")
+            input(type="text" placeholder="Subject" class="subject")
+            textarea( cols="30", rows="10" placeholder="Write Message")

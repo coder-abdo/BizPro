@@ -1,0 +1,23 @@
+section#portfolio.portfolio
+    h2.portfolio__title OUR AWESOME PROJECTS
+    p.portfolio__content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+    .portfolio__works
+        -var data = ['all', 'web-design', 'photography', 'web-development', 'online-marketing', 'digital-media', 'support'];
+        -var classes = ['web-design', 'photography', 'web-development', 'online-marketing', 'digital-media', 'support'];
+        -var worksNum = 9;
+        .button-group.filters-button-group
+            -for(var i = 0;i < data.length;i++)
+                if i === 0
+                    button(class="button is-checked" data-filter=`${data[i]}`)= `${data[i].replace('-', ' ')}`
+                else
+                    button(class="button" data-filter=`.${data[i]}`)= `${data[i].replace('-', ' ')}`
+        .works
+            -for(var j = 0;j < worksNum;j++)
+                -var rand = ~~(Math.random() * classes.length);
+                div(class=`work mix ${classes[rand]}`)
+                    .work__content
+                        h3.work__name Sweet Photo
+                        ul.work__tags
+                            -var tags = ['Business /', 'Service /', 'Product /', 'Template'];
+                            -for(var k = 0;k < tags.length;k++)
+                                li.work__tag= tags[k]

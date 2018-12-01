@@ -1,0 +1,11 @@
+footer.footer
+    .footer.logo
+        img(src="./images/logo.png" alt="logo")
+    .footer__socials
+        -icons = ['facebook-f', 'twitter', 'pinterest', 'linkedin-in', 'skype', 'flickr', 'dribbble', 'google-plus-g'];
+        -for(var i = 0;i < icons.length;i++)
+            .icon
+                i(class=`fab fa-${icons[i]}`)
+    .footer__copyright
+        p copyright &copy; 2018 All rights reserved 
+    

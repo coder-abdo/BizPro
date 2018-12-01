@@ -1,0 +1,48 @@
+.clients
+    padding 8rem 2rem
+    &__title
+        font-size 4rem
+        font-weight 700
+        color $black
+        text-align center
+        position relative
+        padding-bottom 2rem
+        margin-bottom 4rem
+        &::after
+            content ''
+            position absolute
+            display block
+            background-color $red
+            bottom 0
+            left 50%
+            width 5%
+            height 2px
+            transform translateX(-50%)
+    &__content
+        font-size 2rem
+        font-weight 400
+        color $grey
+        margin-bottom 4rem
+        text-align center
+    &__slider
+       flex(flex-start, center)
+       flex-direction column
+    &__opinion
+        color $grey
+        font-size 1.6rem
+        font-weight 300
+        margin 4rem 0
+        text-align center
+    &__name
+        font-size 2.5rem
+        font-weight 700
+
+
+#clients .owl-theme .owl-dots .owl-dot span
+    width 1.4rem
+    height 1.4rem
+    background-color #fff
+    border 1px solid $grey
+#clients .owl-theme .owl-dots .owl-dot.active span
+    border-color $red
+    background-color $red

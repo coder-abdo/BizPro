@@ -1,0 +1,13 @@
+section#services.services
+    h2.services__title SERVICES WE PROVIDE
+    p.services__content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+    .services__container
+        -var services = ['Web Design', 'Photography', 'Web Development', 'Online Marketing', 'Digital Media', 'Support'];
+        -var icons = ['fas fa-brush', 'fas fa-camera', 'fas fa-laptop-code', 'fas fa-chart-line', 'fab fa-medapps', 'fas fa-cogs'];
+        -for(var i = 0;i < icons.length;i++)
+            .service
+                .service__name
+                    .service__icon
+                        i(class=`${icons[i]}`)
+                    h3.service__title= services[i]
+                p.service__desc Lorem ipsum dolor sit amet, consectetur scing elit, sed do eiusmod, tempor incididunt labore et dolore magna aliqua. Ut enim ad minim ut veniam, quis nostrud exercitation ullamco aliquip ex ea commodo consequat.

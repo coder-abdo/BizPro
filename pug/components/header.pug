@@ -1,0 +1,11 @@
+header.header#home
+    a(href="#").header__logo
+        img(src="./images/logo.png", alt="logo")
+    button.header__btn.menu-btn menu
+        i.fas.fa-bars
+    nav.header__nav.nav
+        -var links = ['home', 'about', 'services', 'portfolio', 'team', 'skill', 'clients', 'pricing', 'blog', 'contact'];
+        ul.nav__list
+            -for(var i = 0;i < links.length;i++)
+                li.nav__item
+                    a(href=`#${links[i]}` class="nav__link")= links[i]

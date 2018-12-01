@@ -1,0 +1,12 @@
+section#skill.skill
+    .skill__img
+    -var skills = ['Web Development', 'Online Marketing', 'Digital Media', 'Photography', 'Creative Design'];
+    -var percent = [89, 58, 49, 76, 64];
+    .skill__container
+        -for(var i = 0;i < skills.length;i++)
+            .skill__percent
+                .text
+                    h4.skill__name= skills[i]
+                    h6.skill__amount= `${percent[i]}%`
+                .present
+                    .inner

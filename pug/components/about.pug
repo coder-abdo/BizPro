@@ -1,0 +1,13 @@
+section#about.about
+    h2.about__title ABOUT OUR BIZPRO
+    p.about__content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+    .about__features
+        -var features = ['WEB DEVELOPMENT', 'PHOTOGRAPHY', 'DIGITAL MEDIA', 'ONLINE MARKETING'];
+        -var icons = ['far fa-edit', 'fas fa-camera', 'fab fa-medapps', 'fas fa-chart-line'];
+        -for(var i = 0;i < features.length;i++)
+            .feature
+                .feature__icon
+                    i(class=`${icons[i]}`)
+                h3.feature__title= features[i]
+                p.feature__desc Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                a(href="#" class="btn btn--red btn--about") More Details

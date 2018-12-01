@@ -1,0 +1,9 @@
+section#clients.clients
+    h2.clients__title OUR HAPPY CLIENTS
+    p.clients__content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+    .clients__testmonails.owl-carousel.owl-theme
+        -for(var i = 0;i < 3;i++)
+            .clients__slider
+                img(src=`./images/c${i + 1}.jpg`, alt="client", class="clients__img" style="width:180px;height:180px")
+                p.clients__opinion Our successful construction approach is based on aggressive subcontractor administration, employ-ment of competent personnel, accurate schedule control, quality control and cost control. We employ only qualified subcontractors who share our goal in creating quality projects.
+                h4.clients__name - Spryte Loriano -

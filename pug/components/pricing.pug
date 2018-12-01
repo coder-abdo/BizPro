@@ -1,0 +1,18 @@
+section#pricing.pricing
+    -var pricing = [{title: 'basic',price: 9.99},{title: 'advanced',price: 39.99},{title: 'premium',price: 59.99}];
+    -for(var i = 0;i < pricing.length;i++)
+        div(class=`pricing__item pricing__item--${pricing[i].title}`)
+            .pricing__heading
+                h3.pricing__title= pricing[i].title
+                h4.pricing__subtitle the best to start
+            .pricing__price
+                h2.pricing__value
+                    span.dollar &dollar;
+                    span.value= pricing[i].price
+                    span.per &sol; monthly
+            .pricing__features
+                -var features = ['3,600 Keywords', '50 Social Accounts', '25 Analytics Campaigns', '45 Email Accounts', '24/7 Support'];
+                -for(var j = 0;j < features.length;j++)
+                    h4.feature= features[j]
+            .pricing__btn
+                a(href="#" class="btn btn--price") buy it now

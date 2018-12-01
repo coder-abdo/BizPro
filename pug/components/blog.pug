@@ -1,0 +1,19 @@
+section#blog.blog
+    h2.blog__title OUR LATEST BLOG
+    p.blog__content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+    .blog__blogs
+        -for(var i = 0;i < 3;i++)
+            .blog__container
+                .blog__img
+                    .inner
+                        i.fas.fa-link
+                h3.blog__heading
+                    a(href="#") Playback: Akufo-Addo speaks to business community
+                h4.blog__post posted by 
+                    a(href="#") admin 
+                    | at 04 Feb 2018
+                p.blog__detail Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis iaculis velit in tristique. Curabitur ac urna urna sed accumsan... 
+                    a(href="#" class="btn btn--readme") read more
+                        span.icon &raquo;
+                
+
